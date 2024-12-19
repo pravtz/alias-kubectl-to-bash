@@ -1,8 +1,6 @@
 # 🚀 **Kubectl Turbo Mode** 🐳  
 **Transforme sua experiência com o kubectl em uma verdadeira dança dos dedos! 💃🕺**
 
-Bem-vindo ao **Kubectl Turbo Mode**, o script que vai dar aquele boost de produtividade no seu dia-a-dia com Kubernetes. Com uma combinação de aliases inteligentes e autocomplete, você vai comandar clusters como um maestro regendo uma orquestra. 🎼🎻
-
 ---
 
 ## **🌟 Motivação**  
@@ -11,33 +9,78 @@ A vida já é difícil o suficiente (sim, estou falando daqueles pods que *sempr
 
 ---
 
+## **📦 Versionamento**  
+
+Este projeto segue o versionamento semântico. A versão inicial é **`v1.0.0`**.  
+
+Você pode escolher entre baixar uma versão específica (como `v1.0.0`) ou sempre usar a versão mais recente disponível com a tag **`latest`**.  
+Para visualizar as versões (tags) disponíveis, acesse o repositório no GitHub ou use o comando `git tag` após clonar o repositório.
+
+---
+
 ## **📥 Instalação**  
 
-Siga este passo-a-passo simples e em poucos minutos você estará pronto para impressionar sua equipe:  
+### **1. Instalar diretamente com tag específica (sem clonar o repositório)**  
 
-1. Clone este repositório:  
-   ```bash
-   git clone https://github.com/pravtz/alias-kubectl-to-bash.git
-   cd alias-kubectl-to-bash
-   ```
+#### Usando `curl` (para versão específica):
 
-2. Torne o script executável:  
-   ```bash
-   chmod +x setup-kubectl-aliases.sh
-   ```
+```bash
+curl -O https://raw.githubusercontent.com/pravtz/alias-kubectl-to-bash/v1.0.0/setup-kubectl-aliases.sh
+```
 
-3. Execute o script:  
-   ```bash
-   ./setup-kubectl-aliases.sh
-   ```  
+#### Usando `wget` (para versão específica):
 
-E pronto! 🎉 Você já está equipado para brilhar.  
+```bash
+wget https://raw.githubusercontent.com/pravtz/alias-kubectl-to-bash/v1.0.0/setup-kubectl-aliases.sh
+```
+
+### **2. Instalar sempre a versão mais recente (latest)**  
+
+Para garantir que você está sempre usando a versão mais recente, use a tag **`latest`**. Isso irá baixar automaticamente a última versão publicada do script.
+
+#### Usando `curl` (para `latest`):
+
+```bash
+curl -O https://raw.githubusercontent.com/pravtz/alias-kubectl-to-bash/latest/setup-kubectl-aliases.sh
+```
+
+#### Usando `wget` (para `latest`):
+
+```bash
+wget https://raw.githubusercontent.com/pravtz/alias-kubectl-to-bash/latest/setup-kubectl-aliases.sh
+```
+
+### **3. Tornando o script executável**  
+
+Após baixar o script, torne-o executável com o comando:
+
+```bash
+chmod +x setup-kubectl-aliases.sh
+```
+
+### **4. Executando o script**  
+
+Agora, basta rodar o script para configurar os aliases do kubectl:
+
+```bash
+./setup-kubectl-aliases.sh
+```
+
+---
+
+## **🗑️ Deletando o arquivo após uso**  
+Caso queira remover o arquivo depois de usá-lo, basta rodar o seguinte comando para deletá-lo:
+
+```bash
+rm setup-kubectl-aliases.sh
+```
+
+Isso vai garantir que você não deixe arquivos desnecessários no seu sistema. 📦❌  
 
 ---
 
 ## **🛠️ Como Usar**  
 
-### **1. Use os aliases mágicos**  
 Aqui estão todos os atalhos configurados para você. É só digitar e apertar Enter!  
 
 | **Alias** | **Comando**                                         | **O que faz**                                                |
@@ -65,13 +108,6 @@ Aqui estão todos os atalhos configurados para você. É só digitar e apertar E
 | `klf`     | `kubectl logs -f`                                  | Segue os logs de um pod em tempo real. 📡                   |
 | `kcn`     | `kubectl config set-context --current --namespace` | Altera o namespace atual no contexto. 🚀                   |
 | `kexec`   | `kubectl exec -it`                                 | Acessa interativamente o terminal de um container. 🚪       |
-
-### **2. Quer ver todos os atalhos?**  
-Use o comando especial:  
-```bash
-khelp
-```  
-E uma lista completa dos aliases será exibida para você. 📝  
 
 ---
 
